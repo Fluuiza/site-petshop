@@ -155,3 +155,89 @@ nav a:hover {
     padding: 20px;
   }
 }
+
+:root {
+  --pet-ink: #173b4f;
+  --pet-blue: #2698c9;
+  --pet-blue-dark: #187ba8;
+  --pet-sky: #eaf6fb;
+  --pet-page: #f4f8fa;
+  --pet-text: #344955;
+  --pet-border: #d8e5eb;
+}
+
+body {
+  background: var(--pet-page);
+  color: var(--pet-text);
+}
+
+header {
+  border-bottom: 1px solid var(--pet-border);
+  box-shadow: 0 5px 18px rgba(23, 59, 79, 0.07);
+}
+
+header h1 img {
+  max-width: 100%;
+}
+
+nav a {
+  color: var(--pet-ink);
+  transition: color 180ms ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--pet-blue-dark);
+  border-bottom-color: var(--pet-blue);
+}
+
+.card {
+  border: 1px solid var(--pet-border);
+  border-top: 4px solid var(--pet-blue);
+  box-shadow: 0 10px 26px rgba(23, 59, 79, 0.09);
+}
+
+.card:hover {
+  box-shadow: 0 16px 34px rgba(23, 59, 79, 0.14);
+}
+
+.card h2,
+.artigo-header h1 {
+  color: var(--pet-ink);
+}
+
+.card p,
+.artigo-content p {
+  color: var(--pet-text);
+}
+
+.btn {
+  background: var(--pet-blue);
+  border-radius: 8px;
+  transition: background-color 180ms ease, box-shadow 180ms ease;
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background: var(--pet-blue-dark);
+  box-shadow: 0 5px 14px rgba(24, 123, 168, 0.22);
+}
+
+.artigo-header {
+  border-bottom-color: var(--pet-border);
+}
+
+.artigo-content {
+  border: 1px solid var(--pet-border);
+  box-shadow: 0 10px 26px rgba(23, 59, 79, 0.09);
+}
+
+.artigo-content h2,
+.btn-voltar {
+  color: var(--pet-blue-dark);
+}
+
+a:focus-visible {
+  outline: 3px solid rgba(38, 152, 201, 0.35);
+  outline-offset: 3px;
+}
